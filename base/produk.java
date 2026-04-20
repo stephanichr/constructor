@@ -33,10 +33,18 @@ public class produk {
         this.stok = stok;
     }
 
-    // public void tampilkanInfo() {
-    // System.out.println("produk: " + nama);
-    // System.out.println("Harga: " + harga);
-    // System.out.println("Stok: " + stok);
-    // System.out.println("==========");
-    // }
+    public void kurangiStok(int jumlah){
+        if(jumlah>stok){
+            System.out.println("melebihi stok");
+        }else{
+            stok = stok - jumlah;
+        }
+    }
+
+    public void tampilkanInfo() {
+    System.out.println("produk: " + nama);
+    System.out.println("Harga: " + harga);
+    System.out.println("Stok: " + stok);
+    System.out.println("==========");
+    }
 }

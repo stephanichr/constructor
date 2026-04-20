@@ -1,18 +1,15 @@
-import base.produk;
+
+import base.elektronik;
+import base.makanan;
+
 
 public class main {
     public static void main(String[] args) {
-
-        produk p = new produk("indomie goreng", 5000.0, 100);
-
-        System.out.println(p.getHarga());
-        System.out.println(p.getNama());
-
-        p.setHarga(10000.0);
-        p.setStok(150);
-
-        System.out.println(p.getHarga());
-        System.out.println(p.getNama());
-        System.out.println(p.getStok());
+        elektronik e = new elektronik("Mesin Cuci", 10000000, 1, 1);
+        makanan m = new makanan("Tahu Bulat", 100000, 10, 1);
+        e.setGaransi(12);
+        m.setExpired(2);
+        e.tampilData();
+        m.tampilData();
     }
 }
