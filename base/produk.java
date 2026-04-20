@@ -25,7 +25,13 @@ public class produk {
         return stok;
     }
 
-   
+    public void setHarga(double harga) {
+        this.harga = harga;
+    }
+
+    public void setStok(int stok) {
+        this.stok = stok;
+    }
 
     // public void tampilkanInfo() {
     // System.out.println("produk: " + nama);
