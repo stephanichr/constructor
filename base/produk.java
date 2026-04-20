@@ -3,23 +3,34 @@ package base;
 public class produk {
     // Atribut
     private String nama;
-    String kategori;
     protected double harga;
     public int stok;
 
     // Constructor
-    public produk(String nama, double harga, int stok, String kategori){
+    public produk(String nama, double harga, int stok) {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
-        this.kategori = kategori;
     }
 
-    public void tampilkanInfo(){
-        System.out.println("Produk: " +nama);
-        System.out.println("Kategori: " +kategori);
-        System.out.println("Harga: " +harga);
-        System.out.println("Stok: " +stok);
-        System.out.println("==========");
+    public String getNama() {
+        return nama;
     }
+
+    public double getHarga() {
+        return harga;
+    }
+
+    public int getStok() {
+        return stok;
+    }
+
+   
+
+    // public void tampilkanInfo() {
+    // System.out.println("produk: " + nama);
+    // System.out.println("Harga: " + harga);
+    // System.out.println("Stok: " + stok);
+    // System.out.println("==========");
+    // }
 }
